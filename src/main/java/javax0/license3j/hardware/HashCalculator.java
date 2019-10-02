@@ -8,6 +8,8 @@ import java.security.MessageDigest;
 import java.util.Comparator;
 import java.util.List;
 
+import javax0.license3j.hardware.Network.Interface.Data;
+
 /**
  * Calculator to calculate a more or less unique code for the actual machine. The calculation uses the
  * network cards, host name and architecture of the machine.
@@ -24,7 +26,7 @@ class HashCalculator {
 
     private void updateWithNetworkData(final MessageDigest md5,
                                        final List<Network.Interface.Data> interfaces) {
-        for (final var ni : interfaces) {
+        for (final Data ni : interfaces) {
             md5.update(ni.name.getBytes(StandardCharsets.UTF_8));
             if (ni.hwAddress != null) {
                 md5.update(ni.hwAddress);

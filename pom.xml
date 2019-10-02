@@ -89,11 +89,10 @@
                 <version>3.8.0</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>1.11</source>
-                    <target>1.11</target>
-                    <release>11</release>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <jdkToolchain>
-                        <version>11</version>
+                        <version>8</version>
                     </jdkToolchain>
                 </configuration>
             </plugin>
